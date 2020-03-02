@@ -1,40 +1,140 @@
 <html>
 	<head>
 		<title>Robin Debroux CV</title>
+		<script src="https://kit.fontawesome.com/3f538cee96.js" crossorigin="anonymous"></script>
 		<style>
 			body{
-				background-color: #000;
+				background-color: #212121;
 				display: flex;
 				padding: 0;
 				margin: 0;
+				font-family: sans-serif;
 			}
 			.sidebar{
 				background-color: #FFFF00;
-				height: 100vh;
+				align-items: stretch;
 				width: 25vw;
-				position: absolute;
+				position: sticky;
+				top: 0;
 			}
 			.main{
 				color: #FFF;
 				height: 100vh;
-				width: 75vw;
-				font-family: sans-serif;
+				padding-left: 5vw;
+				padding-top: 4vw;
+			}
+			h3{
+				background-color: #212121;
+				color: #FFFF00;
+				text-align: center;
+				padding-top: 1vh;
+				padding-bottom: 1vh;
+			}
+			img{
+				width: 10vw;
+				height: 10vw;
+				border-radius: 50%;
+				margin-left: 7.5vw;
+				margin-top: 3vh;
+			}
+			a{
+				color: #212121;
+			}
+			ul{
+				padding: 0;
+			}
+			li{
+				list-style-type: none;
+				margin-left: 2.5vw;
+			}
+			.about{
+				padding-left: 2.5vw;
+				padding-right: 2.5vw;
+			}
+			table{
+				color: #FFF;
+			}
+			.highlighttxt{
+				color: #FFFF00;
+			}
+			.footer{
+				bottom: 0;
+				position: sticky;
+			}
+			h1{
+				margin: 0;
+				font-size: 4em;
+			}
+			h2{
+				font-size: 1.5em;
+				margin-bottom: 8vh;
+			}
+
 		</style>
 	</head>
 	<body>
 		<div class="sidebar">
-			<h1>Robin E.<br>Debroux</h1>
-			<h2>28/10/96  M.</h2>
+			<img src="assets/avatar.png">
 			<h3>CONTACT</h3>
 			<ul>
-				<li>ADR: Bruxelles, BEL.</li>
-				<li>TEL: N/A</li>
-				<li>MAIL: throwaway@gmail.com</li>
-				<li>SITE: <a href="www.ff0000-r.github.io/P2-CV/">exampleUrl.com</a>
-			
+				<li><b>ADR:</b><br> Bruxelles, BEL.</li>
+				<li><b>TEL:</b><br> N/A</li>
+				<li><b>MAIL:</b><br> throwaway@gmail.com</li>
+				<li><b>SITE:</b><br> <a href="www.ff0000-r.github.io/P2-CV/">exampleUrl.com</a></li>
+				<li><b>SKYPE:</b><br> @whatever</li>
+			</ul>
+			<h3>ABOUT ME</h3>
+			<p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet odio non dictum luctus. Sed gravida eu lectus non rutrum. Praesent id malesuada neque. Etiam at odio nibh. Sed dignissim purus dolor, et ultrices tellus aliquam a.</p>
+			<div class="footer">
+				<h3>HOBBYS</h3>
+				<div>placeholder text<br>insert icons here</div>
+			</div>	
 		</div>
 		<div class="main">
-
+			<h1 class="highlighttxt">Robin E.</h1>
+			<h1>Debroux</h1>
+			<h2>Développeur web freelance</h2>
+			<h4>FORMATION</h4>
+			<table>
+				<tr>
+					<td>2016-2017<br>Liège</td>
+					<td><h5>UNI A</h5>Junior web dev.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet odio non dictum luctus.</td>
+				</tr>
+				<tr>
+					<td>2017-2019<br>Bruxelles</td>
+					<td><h5>UNI B</h5>Graphic designer.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet odio non dictum luctus.</td>
+				</tr>
+			</table>
+			<h4>EXPERIENCE PROFESSIONELLE</h4>
+			<table>
+				<tr>
+					<td>Mars 2018 - Poste actuel<br>Bruxelles</td>
+					<td><h5>JOB A</h5>Web Developer<br><br>Lorem ipsum.</td>
+				</tr>
+				<tr>
+					<td>Mars 2018 - Poste actuel<br>Bruxelles</td>
+					<td><h5>JOB B</h5>Graphic Designer<br><br>Lorem ipsum</td>
+				</tr>
+				<tr>
+					<td>Mars 2018 - Poste actuel<br>Bruxelles</td>
+					<td><h5>JOB C</h5>Graphic Designer<br><br>Lorem ipsum.</td>
+				</tr>
+			</table>
+			<h4>RECOMMANDATIONS</h4>
+			<table class="rec">
+				<tr>
+					<td>JOHN DOE</td>
+					<td>Directeur, Job B</td>
+					<td>Tel: 555-555</td>
+					<td>Mail: johnDoe@B.com</td>
+				</tr>
+				<tr>
+					<td>JANE DOE</td>
+					<td>Directrice, Job C</td>
+					<td>Tel: 555-555</td>
+					<td>Mail: janeDoe@C.com</td>
+				</tr>
+			
 		</div>
 	</body>
 </html>
