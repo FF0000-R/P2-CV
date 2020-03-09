@@ -52,6 +52,9 @@ table{
 	color: #FFF;
     width: 100%;
 }
+td{
+    width: 50%;
+}
 .highlighttxt{
 	color: #FFFF00;
 }
