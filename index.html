@@ -1,81 +1,13 @@
 <html>
 	<head>
 		<title>Robin Debroux CV</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="https://kit.fontawesome.com/3f538cee96.js" crossorigin="anonymous"></script>
-		<style>
-			body{
-				background-color: #212121;
-				display: flex;
-				padding: 0;
-				margin: 0;
-				font-family: sans-serif;
-			}
-			.sidebar{
-				background-color: #FFFF00;
-				align-items: stretch;
-				width: 25vw;
-				position: sticky;
-				top: 0;
-			}
-			.main{
-				color: #FFF;
-				height: 100vh;
-				padding-left: 5vw;
-				padding-top: 4vw;
-			}
-			h3{
-				background-color: #212121;
-				color: #FFFF00;
-				text-align: center;
-				padding-top: 1vh;
-				padding-bottom: 1vh;
-			}
-			img{
-				width: 10vw;
-				height: 10vw;
-				border-radius: 50%;
-				margin-left: 7.5vw;
-				margin-top: 3vh;
-			}
-			a{
-				color: #212121;
-			}
-			ul{
-				padding: 0;
-			}
-			li{
-				list-style-type: none;
-				margin-left: 2.5vw;
-			}
-			.about{
-				padding-left: 2.5vw;
-				padding-right: 2.5vw;
-			}
-			table{
-				color: #FFF;
-			}
-			.highlighttxt{
-				color: #FFFF00;
-			}
-			.footer{
-				bottom: 0;
-				position: sticky;
-			}
-			h1{
-				margin: 0;
-				font-size: 4em;
-			}
-			h2{
-				font-size: 1.5em;
-				margin-bottom: 8vh;
-			}
-
-		</style>
 	</head>
 	<body>
 		<div class="sidebar">
 			<img src="assets/avatar.png">
-			<h3>CONTACT</h3>
+			<what class="sidebarInfo">CONTACT</what>
 			<ul>
 				<li><b>ADR:</b><br> Bruxelles, BEL.</li>
 				<li><b>TEL:</b><br> N/A</li>
@@ -83,44 +15,43 @@
 				<li><b>SITE:</b><br> <a href="www.ff0000-r.github.io/P2-CV/">exampleUrl.com</a></li>
 				<li><b>SKYPE:</b><br> @whatever</li>
 			</ul>
-			<h3>ABOUT ME</h3>
+			<what class="sidebarInfo">ABOUT ME</what>
 			<p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet odio non dictum luctus. Sed gravida eu lectus non rutrum. Praesent id malesuada neque. Etiam at odio nibh. Sed dignissim purus dolor, et ultrices tellus aliquam a.</p>
 			<div class="footer">
-				<h3>HOBBYS</h3>
+				<what class="sidebarInfo">HOBBYS</what>
 				<div>placeholder text<br>insert icons here</div>
 			</div>	
 		</div>
 		<div class="main">
-			<h1 class="highlighttxt">Robin E.</h1>
-			<h1>Debroux</h1>
-			<h2>Développeur web freelance</h2>
-			<h4>FORMATION</h4>
+			<h1><span class="highlighttxt">Robin E.</span><br>Debroux<br>
+			<span class="underName">Développeur web freelance</span></h1>
+			<h2>FORMATION</h2>
 			<table>
 				<tr>
 					<td>2016-2017<br>Liège</td>
-					<td><h5>UNI A</h5>Junior web dev.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet odio non dictum luctus.</td>
+					<td><span class="institution">UNI A</span>Junior web dev.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet odio non dictum luctus.</td>
 				</tr>
 				<tr>
 					<td>2017-2019<br>Bruxelles</td>
-					<td><h5>UNI B</h5>Graphic designer.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet odio non dictum luctus.</td>
+					<td><span class="institution">UNI B</span>Graphic designer.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet odio non dictum luctus.</td>
 				</tr>
 			</table>
-			<h4>EXPERIENCE PROFESSIONELLE</h4>
+			<h2>EXPERIENCE PROFESSIONELLE</h2>
 			<table>
 				<tr>
 					<td>Mars 2018 - Poste actuel<br>Bruxelles</td>
-					<td><h5>JOB A</h5>Web Developer<br><br>Lorem ipsum.</td>
+					<td><span class="institution">JOB A</span>Web Developer<br><br>Lorem ipsum.</td>
 				</tr>
 				<tr>
 					<td>Mars 2018 - Poste actuel<br>Bruxelles</td>
-					<td><h5>JOB B</h5>Graphic Designer<br><br>Lorem ipsum</td>
+					<td><span class="institution">JOB B</span>Graphic Designer<br><br>Lorem ipsum</td>
 				</tr>
 				<tr>
 					<td>Mars 2018 - Poste actuel<br>Bruxelles</td>
-					<td><h5>JOB C</h5>Graphic Designer<br><br>Lorem ipsum.</td>
+					<td><span class="institution">JOB C</span>Graphic Designer<br><br>Lorem ipsum.</td>
 				</tr>
 			</table>
-			<h4>RECOMMANDATIONS</h4>
+			<h2>RECOMMANDATIONS</h2>
 			<table class="rec">
 				<tr>
 					<td>JOHN DOE</td>
