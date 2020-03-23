@@ -1,0 +1,47 @@
+.body{
+  padding: 0px;
+  margin: 0px;
+}
+
+h1, h2 {
+  margin: 0;
+}
+header{
+  display: flex;
+  
+}
+
+.sidebar {
+  width: 25%;
+  background-color: yellow;
+}
+main {
+  display: flex;
+}
+.content {
+  width: 75%;
+  background-color: grey;
+}
+
+@media all and (max-width: 768px){
+  header, main {
+    flex-direction: column;
+  } 
+  .sidebar, .content {
+    width: 100%;
+  }
+  .sidebar{
+    order: 2;
+  }
+  
+  .content{
+    order: 1
+  }
+  
+  .sidebar.avatar {
+    order: 1
+  }
+  .content.name {
+    order: 2
+  }
+}

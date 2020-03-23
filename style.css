@@ -10,11 +10,13 @@ body{
 	width: 30vw;
     height: 150vh;
     height: 100%;
+    order: 1;
 }
 .main{
 	color: #FFF;
 	padding-left: 5vw;
 	padding-top: 4vw;
+    order: 2;
 }
 .sidebarInfo{
 	background-color: #212121;
@@ -25,12 +27,15 @@ body{
     display: block;
     width: 30vw;
 }
+.sidebarInfo:nth-child(1){
+    margin-top: 30vh;
+}
 img{
 	width: 10vw;
 	height: 10vw;
 	border-radius: 50%;
-	margin-left: 10vw;
-	margin-top: 3vh;
+	margin-left: -25vw;
+	margin-top: -15vh;
     margin-bottom: 3vh;
 }
 a{
@@ -84,4 +89,11 @@ h2{
 }
 h2:nth-child(2){
     margin-top: 10vh;
+}
+.rec{
+    display: flex;
+}
+.boss{
+    flex-grow: 1;
+    text-align: center;
 }
