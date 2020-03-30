@@ -3,16 +3,14 @@ body{
 	display: flex;
 	margin: 0;
 	font-family: sans-serif;
-    height: 150vh;
 }
 .sidebar{
 	background-color: #FFFF00;
 	width: 30vw;
-    height: 150vh;
-    height: 100%;
     order: 1;
+    justify-content: flex-start;
 }
-.main{
+main{
 	color: #FFF;
 	padding-left: 5vw;
 	padding-top: 4vw;
@@ -62,10 +60,6 @@ td{
 }
 .highlighttxt{
 	color: #FFFF00;
-}
-.footer{
-	top: 0;
-	position: sticky;
 }
 h1{
 	margin: 0;
