@@ -1,9 +1,9 @@
 body{
-	background-color: #212121;
-	display: flex;
+    background-color: #212121;
+    display: flex;
     flex-direction: column;
-	margin: 0;
-	font-family: sans-serif;
+    margin: 0;
+    font-family: sans-serif;
 }
 header, main {
     display: flex;
@@ -12,7 +12,7 @@ header, main {
 .avatar{
     background-color: #FFFF00;
     color: #212121;
-	width: 30vw;
+    width: 30vw;
     display: flex;
 }
 .underline{
@@ -20,20 +20,20 @@ header, main {
     text-decoration-color: #FFFF00;
 }
 .sidebar{
-	background-color: #FFFF00;
+    background-color: #FFFF00;
     color: #212121;
-	width: 30vw;
+    width: 30vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
 .sidebarInfo{
-	background-color: #212121;
-	color: #FFFF00;
-	text-align: center;
-	padding-top: 1vh;
-	padding-bottom: 1vh;
+    background-color: #212121;
+    color: #FFFF00;
+    text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     display: block;
     width: 30vw;
     border-style: none;
@@ -42,28 +42,28 @@ header, main {
     margin-top: 30vh;
 }
 img{
-	width: 10vw;
-	height: 10vw;
+    width: 10vw;
+    height: 10vw;
     margin: auto;
-	border-radius: 50%;
+    border-radius: 50%;
 }
 a{
-	color: #212121;
+    color: #212121;
 }
 ul{
-	padding: 0;
+    padding: 0;
 }
 li{
-	list-style-type: none;
-	margin-left: 2.5vw;
+    list-style-type: none;
+    margin-left: 2.5vw;
 }
 .about{
-	padding-left: 2.5vw;
-	padding-right: 2.5vw;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
     text-align: justify;
 }
 table{
-	color: #FFF;
+   color: #FFF;
     width: 100%;
     padding: 3vh;
 
@@ -75,16 +75,24 @@ td{
 td:nth-child(1){
     width: 30%;
 }
-
+.sub{
+    display: flex;
+    align-items: flex-start;
+}
+.fa-chevron-circle-right,
+.fa-angle-right{
+    color: #FFFF00;
+    margin-right: 1vw;
+}
 .highlighttxt{
-	color: #FFFF00;
+    color: #FFFF00;
 }
 h1{
-	font-size: 5vw;
+    font-size: 5vw;
     line-height: 0.9;
 }
 .underName{
-	font-size: 50%;
+    font-size: 50%;
     margin-top: 10vh;
 }
 .institution{
