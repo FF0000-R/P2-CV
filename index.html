@@ -1,47 +1,75 @@
 <html>
 	<head>
+        <meta charset="utf8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Robin Debroux CV</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="https://kit.fontawesome.com/3f538cee96.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<main>
-            <header>
+        <header>
+            <aside class="avatar">
+                <img src="assets/avatar.png" alt="avatar">
+            </aside>
                 <h1><span class="highlighttxt">Robin E.</span>Debroux<br>
-                    <span class="underName"><span style="text-decoration: underline #FFFF00">Développeur we</span>b freelance</span></h1>
-    			<img src="assets/avatar.png" alt="avatar">
-            </header>
-            <section>
+                    <span class="underName"><span class="underline">Développeur we</span>b freelance</span></h1>
+        </header>
+		<main>
+            <aside class="sidebar">
                 <article>
-                    <h2>FORMATION</h2>
+                <h2 class="sidebarInfo">CONTACT</h2>
+                    <ul>
+                        <li><b>ADR:</b><br> Bruxelles, BEL.</li>
+                        <li><b>TEL:</b><br> N/A</li>
+                        <li><b>MAIL:</b><br> throwaway@gmail.com</li>
+                        <li><b>SITE:</b><br> <a href="www.ff0000-r.github.io/P2-CV/">exampleUrl.com</a></li>
+                        <li><b>SKYPE:</b><br> @whatever</li>
+                    </ul>
+                </article>
+                <article>
+                    <h2 class="sidebarInfo">ABOUT ME</h2>
+                    <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet odio non dictum luctus. Sed gravida eu lectus non rutrum. Praesent id malesuada neque. Etiam at odio nibh. Sed dignissim purus dolor, et ultrices tellus aliquam a.Fusce sagittis sodales justo vel scelerisque. Maecenas hendrerit erat blandit libero volutpat, sed lacinia elit consectetur. In a mollis nulla.</p>
+                </article>
+                <article class="hobby">
+                    <h2 class="sidebarInfo hobbytitle">HOBBYS</h2>
+                    <div class="hobbyico">
+                        <i class="fas fa-hamburger"></i>
+                        <i class="fas fa-drumstick-bite"></i>
+                        <i class="fas fa-hotdog"></i>
+                    </div>
+                </article>
+            </aside>
+            <section class="cv">
+                <article>
+                    <h2><i class="fas fa-book"></i>FORMATION</h2>
                     <table>
                         <tr>
                             <td>2016-2017<br>Liège</td>
-                            <td><span class="institution">UNI A</span>Junior web dev.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet odio non dictum luctus.</td>
+                            <td><span class="institution">UNI A</span>Junior web dev.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis sodales justo vel scelerisque. Maecenas hendrerit erat blandit libero volutpat, sed lacinia elit consectetur. In a mollis nulla. Vestibulum nec mauris eu est commodo vulputate eget eleifend mauris. Maecenas eget neque enim. Nulla in magna vel diam ullamcorper euismod. Suspendisse potenti. Integer ac sagittis massa.</td>
                         </tr>
                         <tr>
                             <td>2017-2019<br>Bruxelles</td>
-                            <td><span class="institution">UNI B</span>Graphic designer.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet odio non dictum luctus.</td>
+                            <td><span class="institution">UNI B</span>Graphic designer.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis sodales justo vel scelerisque. Maecenas hendrerit erat blandit libero volutpat, sed lacinia elit consectetur. In a mollis nulla. Vestibulum nec mauris eu est commodo vulputate eget eleifend mauris. Maecenas eget neque enim. Nulla in magna vel diam ullamcorper euismod. Suspendisse potenti. Integer ac sagittis massa.</td>
                         </tr>
                     </table>
                 </article>
                 <article>
-                    <h2>EXPERIENCE PROFESSIONELLE</h2>
+                    <h2><i class="fas fa-briefcase"></i>EXPERIENCE PROFESSIONELLE</h2>
                     <table>
                         <tr>
                             <td>Mars 2018 - Poste actuel<br>Bruxelles</td>
-                            <td><span class="institution">JOB A</span>Web Developer<br><br>Lorem ipsum.</td>
+                            <td><span class="institution">JOB A</span>Web Developer<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis sodales justo vel scelerisque. Maecenas hendrerit erat blandit libero volutpat, sed lacinia elit consectetur. In a mollis nulla. Vestibulum nec mauris.</td>
                         </tr>
                         <tr>
                             <td>Mars 2018 - Poste actuel<br>Bruxelles</td>
-                            <td><span class="institution">JOB B</span>Graphic Designer<br><br>Lorem ipsum</td>
+                            <td><span class="institution">JOB B</span>Graphic Designer<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis sodales justo vel scelerisque. Maecenas hendrerit erat blandit libero volutpat, sed lacinia elit consectetur. In a mollis nulla.</td>
                         </tr>
                         <tr>
                             <td>Mars 2018 - Poste actuel<br>Bruxelles</td>
-                            <td><span class="institution">JOB C</span>Graphic Designer<br><br>Lorem ipsum.</td>
+                            <td><span class="institution">JOB C</span>Graphic Designer<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis sodales justo vel scelerisque. Maecenas hendrerit erat blandit libero volutpat.</td>
                         </tr>
                     </table>
-                    <h2>RECOMMANDATIONS</h2>
+                    <h2><i class="fas fa-folder-open"></i>RECOMMANDATIONS</h2>
                     <aside class="rec">
                         <div class="boss">
                             <p>JOHN DOE</p>
@@ -59,25 +87,5 @@
                 </article>
             </section>                
 		</main>
-        <section class="sidebar">
-            <article>
-			<h2 class="sidebarInfo">CONTACT</h2>
-                <ul>
-                    <li><b>ADR:</b><br> Bruxelles, BEL.</li>
-                    <li><b>TEL:</b><br> N/A</li>
-                    <li><b>MAIL:</b><br> throwaway@gmail.com</li>
-                    <li><b>SITE:</b><br> <a href="www.ff0000-r.github.io/P2-CV/">exampleUrl.com</a></li>
-                    <li><b>SKYPE:</b><br> @whatever</li>
-                </ul>
-            </article>
-            <article>
-                <h2 class="sidebarInfo">ABOUT ME</h2>
-                <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet odio non dictum luctus. Sed gravida eu lectus non rutrum. Praesent id malesuada neque. Etiam at odio nibh. Sed dignissim purus dolor, et ultrices tellus aliquam a.</p>
-            </article>
-            <article>
-                <h2 class="sidebarInfo" style="align-self: flex-end">HOBBYS</h2>
-				<div>placeholder text<br>insert icons here</div>
-            </article>
-        </section>
 	</body>
 </html>

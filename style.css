@@ -1,21 +1,33 @@
 body{
 	background-color: #212121;
 	display: flex;
+    flex-direction: column;
 	margin: 0;
 	font-family: sans-serif;
 }
+header, main {
+    display: flex;
+    color: #FFF;
+}
+.avatar{
+    background-color: #FFFF00;
+    color: #212121;
+	width: 30vw;
+    display: flex;
+}
+.underline{
+    text-decoration: underline;
+    text-decoration-color: #FFFF00;
+}
 .sidebar{
 	background-color: #FFFF00;
+    color: #212121;
 	width: 30vw;
-    order: 1;
+    display: flex;
+    flex-direction: column;
     justify-content: flex-start;
 }
-main{
-	color: #FFF;
-	padding-left: 5vw;
-	padding-top: 4vw;
-    order: 2;
-}
+
 .sidebarInfo{
 	background-color: #212121;
 	color: #FFFF00;
@@ -24,17 +36,16 @@ main{
 	padding-bottom: 1vh;
     display: block;
     width: 30vw;
+    border-style: none;
 }
-.sidebarInfo:nth-child(1){
+.sidebarInfo:nth-child(0){
     margin-top: 30vh;
 }
 img{
 	width: 10vw;
 	height: 10vw;
+    margin: auto;
 	border-radius: 50%;
-	margin-left: -25vw;
-	margin-top: -15vh;
-    margin-bottom: 3vh;
 }
 a{
 	color: #212121;
@@ -54,16 +65,22 @@ li{
 table{
 	color: #FFF;
     width: 100%;
+    padding: 3vh;
+
 }
 td{
-    width: 50%;
+    padding-bottom: 5vh;
+    vertical-align: super;
 }
+td:nth-child(1){
+    width: 30%;
+}
+
 .highlighttxt{
 	color: #FFFF00;
 }
 h1{
-	margin: 0;
-	font-size: 10vh;
+	font-size: 5vw;
     line-height: 0.9;
 }
 .underName{
@@ -84,10 +101,110 @@ h2{
 h2:nth-child(2){
     margin-top: 10vh;
 }
+.hobby{
+    margin-top: auto;
+}
+.hobbytitle{
+    margin: 0;
+}
+.hobbyico{
+    display: flex;
+    justify-content: space-between;
+    padding: 5vw;
+    font-size: 50px;
+}
+.cv, h1{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+}
 .rec{
     display: flex;
 }
 .boss{
     flex-grow: 1;
     text-align: center;
+}
+.fa-book,
+.fa-briefcase,
+.fa-folder-open{
+    color: #FFFF00;
+    margin-right: 2vw;
+    margin-bottom: 0.5vh;
+}
+@media all and (orientation: portrait) {
+    body{
+        flex-direction: column;
+    }
+    header{
+        background-color: #FFFF00;
+        color: #212121;
+        justify-content: center;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
+    .avatar{
+        order: 1;
+        width: 20%;
+    }
+    img{
+        width: 8vw;
+        height: 8vw;
+        margin: 0;
+        margin-left: auto;
+    }
+    h1{
+        width: 60%;
+        margin: 0;
+    }
+    .underline{
+        text-decoration-color: #212121;
+    }
+    .highlighttxt{
+        color: #212121;
+    }
+    main{
+        flex-direction: column;
+        
+    }
+    .sidebar{
+        width: 100%;
+        order: 1;
+        
+    }
+    .sidebarInfo{
+        width: 100%;
+    }
+    
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 2vw;
+    }
+    li{
+        
+    }
+    .about{
+        width: 80%;
+        padding: 2vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hobbyico{
+        margin-right: auto;
+        margin-left: auto;
+        width: 30%;
+    }
+    .cv{
+        width: 80vw;
+        padding-top: 3vh;
+        padding-bottom: 5vh;
+    }
+    table{
+        padding: 1vw;
+
+    }
+    td{
+        padding-bottom: 3vw;
+    }
 }
