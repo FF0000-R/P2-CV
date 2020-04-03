@@ -15,6 +15,23 @@ header, main {
     width: 30vw;
     display: flex;
 }
+img{
+    width: 10vw;
+    height: 10vw;
+    margin: auto;
+    border-radius: 50%;
+}
+h1{
+    font-size: 5vw;
+    line-height: 0.9;
+}
+.highlighttxt{
+    color: #FFFF00;
+}
+.underName{
+    font-size: 50%;
+    margin-top: 10vh;
+}
 .underline{
     text-decoration: underline;
     text-decoration-color: #FFFF00;
@@ -27,7 +44,6 @@ header, main {
     flex-direction: column;
     justify-content: flex-start;
 }
-
 .sidebarInfo{
     background-color: #212121;
     color: #FFFF00;
@@ -38,17 +54,13 @@ header, main {
     width: 30vw;
     border-style: none;
 }
-.sidebarInfo:nth-child(0){
-    margin-top: 30vh;
+h2{
+    border-style: hidden;
+    border-bottom-style: solid;
+    border-color: #FFFF00;
 }
-img{
-    width: 10vw;
-    height: 10vw;
-    margin: auto;
-    border-radius: 50%;
-}
-a{
-    color: #212121;
+h2:nth-child(2){
+    margin-top: 10vh;
 }
 ul{
     padding: 0;
@@ -57,10 +69,37 @@ li{
     list-style-type: none;
     margin-left: 2.5vw;
 }
+a{
+    color: #212121;
+}
 .about{
     padding-left: 2.5vw;
     padding-right: 2.5vw;
     text-align: justify;
+}
+.hobby{
+    margin-top: auto;
+}
+.hobbytitle{
+    margin: 0;
+}
+.hobbyico{
+    display: flex;
+    justify-content: space-between;
+    padding: 5vw;
+    font-size: 50px;
+}
+.cv, h1{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+}
+.fa-book,
+.fa-briefcase,
+.fa-folder-open{
+    color: #FFFF00;
+    margin-right: 2vw;
+    margin-bottom: 0.5vh;
 }
 table{
    color: #FFF;
@@ -84,47 +123,11 @@ td:nth-child(1){
     color: #FFFF00;
     margin-right: 1vw;
 }
-.highlighttxt{
-    color: #FFFF00;
-}
-h1{
-    font-size: 5vw;
-    line-height: 0.9;
-}
-.underName{
-    font-size: 50%;
-    margin-top: 10vh;
-}
 .institution{
     font-weight: bold;
     font-size: 110%;
     display: block;
     margin-bottom: 1vh;
-}
-h2{
-    border-style: hidden;
-    border-bottom-style: solid;
-    border-color: #FFFF00;
-}
-h2:nth-child(2){
-    margin-top: 10vh;
-}
-.hobby{
-    margin-top: auto;
-}
-.hobbytitle{
-    margin: 0;
-}
-.hobbyico{
-    display: flex;
-    justify-content: space-between;
-    padding: 5vw;
-    font-size: 50px;
-}
-.cv, h1{
-    margin-left: auto;
-    margin-right: auto;
-    width: 60vw;
 }
 .rec{
     display: flex;
@@ -132,13 +135,6 @@ h2:nth-child(2){
 .boss{
     flex-grow: 1;
     text-align: center;
-}
-.fa-book,
-.fa-briefcase,
-.fa-folder-open{
-    color: #FFFF00;
-    margin-right: 2vw;
-    margin-bottom: 0.5vh;
 }
 @media all and (orientation: portrait) {
     body{
@@ -188,9 +184,6 @@ h2:nth-child(2){
         display: flex;
         justify-content: space-evenly;
         padding: 2vw;
-    }
-    li{
-        
     }
     .about{
         width: 80%;
