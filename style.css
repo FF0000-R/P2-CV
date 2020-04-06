@@ -20,6 +20,8 @@ img{
     height: 10vw;
     margin: auto;
     border-radius: 50%;
+    border-style: solid;
+    border-color: #616161;
 }
 h1{
     font-size: 5vw;
