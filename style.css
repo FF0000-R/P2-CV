@@ -66,10 +66,11 @@ h2:nth-child(2){
 }
 ul{
     padding: 0;
+    flex-wrap: wrap;
 }
 li{
     list-style-type: none;
-    margin-left: 2.5vw;
+    text-align: center;
 }
 a{
     color: #212121;
