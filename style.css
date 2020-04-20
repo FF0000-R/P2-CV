@@ -4,6 +4,10 @@ body{
     flex-direction: column;
     margin: 0;
     font-family: sans-serif;
+    -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 header, main {
     display: flex;
@@ -20,8 +24,7 @@ img{
     height: 10vw;
     margin: auto;
     border-radius: 50%;
-    border-style: solid;
-    border-color: #616161;
+    border: solid #616161;
 }
 h1{
     font-size: 5vw;
@@ -88,9 +91,19 @@ a{
 }
 .hobbyico{
     display: flex;
-    justify-content: space-between;
-    padding: 5vw;
-    font-size: 50px;
+    justify-content: space-around;
+    padding-bottom: 4vw;
+    padding-top: 4vw;
+    padding-right: auto;
+    padding-left: auto;
+    font-size: 50px; 
+}
+.fa-hamburger,
+.fa-drumstick-bite,
+.fa-hotdog{
+    padding: 1vw;
+    border: solid #212121 7px;
+    border-radius: 50%;
 }
 .cv, h1{
     margin-left: auto;
@@ -104,22 +117,26 @@ a{
     margin-right: 2vw;
     margin-bottom: 0.5vh;
 }
-table{
-   color: #FFF;
-    width: 100%;
+h3{
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+.container{
     padding: 3vh;
-
 }
-td{
-    padding-bottom: 5vh;
-    vertical-align: super;
-}
-td:nth-child(1){
-    width: 30%;
-}
-.sub{
+.element{
     display: flex;
-    align-items: flex-start;
+    padding-bottom: 5vh;
+}
+.location{
+    width: 30%;
+    flex-basis: 30%;
+    display: flex;
+}
+.details{
+    flex-basis: 70%;
 }
 .fa-chevron-circle-right,
 .fa-angle-right{
@@ -134,6 +151,7 @@ td:nth-child(1){
 }
 .rec{
     display: flex;
+    padding-bottom: 5vh;
 }
 .boss{
     flex-grow: 1;
@@ -197,6 +215,7 @@ td:nth-child(1){
     .hobbyico{
         margin-right: auto;
         margin-left: auto;
+        justify-content: space-between;
         width: 30%;
     }
     .cv{
@@ -204,11 +223,13 @@ td:nth-child(1){
         padding-top: 3vh;
         padding-bottom: 5vh;
     }
-    table{
+    .container{
         padding: 1vw;
-
     }
-    td{
+    .element{
         padding-bottom: 3vw;
+    }
+    .rec{
+        padding-bottom: 0;
     }
 }
