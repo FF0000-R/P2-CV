@@ -4,27 +4,29 @@
 	<head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Robin E Debroux's resume">
+        <meta name="keywords" content="Robin, Debroux, RobinDebroux, RobinEDebroux, RED, html, resume, cv, curriculum, vitae">
 		<title>Robin Debroux CV</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="https://kit.fontawesome.com/3f538cee96.js" crossorigin="anonymous"></script>
 	</head>
-	<body>
+	   <body itemscope itemtype="http://schema.org/Person">
         <header>
             <aside class="avatar">
-                <img src="assets/avatar.png" alt="avatar">
+                <img src="assets/avatar.png" alt="avatar" itemprop="image">
             </aside>
-                <h1><span class="highlighttxt">Robin E.</span>Debroux<br>
-                    <span class="underName"><span class="underline">Dév</span>eloppeur web freelance</span></h1>
+            <h1><span class="highlighttxt" itemprop="givenName">Robin E.</span> <span itemprop="familyName">Debroux</span><br>
+                    <span itemprop="jobTitle" class="underName"><span class="underline">Dév</span>eloppeur web freelance</span></h1>
         </header>
 		<main>
             <aside class="sidebar">
                 <article>
                 <h2 class="sidebarInfo">CONTACT</h2>
                     <ul>
-                        <li><b>ADR:</b><br> Bruxelles, BEL.</li>
-                        <li><b>TEL:</b><br> 029999999</li>
-                        <li><b>MAIL:</b><br> throwaway@gmail.com</li>
-                        <li><b>SITE:</b><br> <a href="http://endless.horse/">exampleUrl.com</a></li>
+                        <li><b>ADR:</b><br> <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span  itemprop="addressLocality">Bruxelles, BEL.</span></span></li>
+                        <li><b>TEL:</b><br> <span itemprop="telephone">029999999</span></li>
+                        <li><b>MAIL:</b><br> <a href="mailto:throwaway@gmail.com" itemprop="email">throwaway@gmail.com</a></li>
+                        <li><b>SITE:</b><br> <a href="http://endless.horse/" itemprop="url">exampleUrl.com</a></li>
                         <li><b>SKYPE:</b><br> @whatever</li>
                     </ul>
                 </article>
@@ -105,21 +107,21 @@
                     </div>
                     <h2><i class="fas fa-folder-open"></i>RECOMMANDATIONS</h2>
                     <aside class="rec">
-                        <div class="boss">
-                            <p>JOHN DOE</p>
-                            <p>Directeur, Job B</p>
-                            <p>Tel: 555-555</p>
-                            <p>Mail: johnDoe@B.com</p>
+                        <div class="boss" itemprop="colleague" itemscope itemtype="http://schema.org/Person">
+                            <p itemprop="name">JOHN DOE</p>
+                            <p itemprop="jobTitle">Directeur, Job B</p>
+                            <p itemprop="telephone">Tel: 555-555</p>
+                            <p>Mail: <a href="mailto:johnDoe@B.com" itemprop="email">johnDoe@B.com</a></p>
                         </div>
-                        <div class="boss">
-                            <p>JANE DOE</p>
-                            <p>Directrice, Job C</p>
-                            <p>Tel: 555-555</p>
-                            <p>Mail: janeDoe@C.com</p>
+                        <div class="boss" itemprop="colleague" itemscope itemtype="http://schema.org/Person">
+                            <p itemprop="name">JANE DOE</p>
+                            <p itemprop="jobTitle">Directrice, Job C</p>
+                            <p itemprop="telephone">Tel: 555-555</p>
+                            <p>Mail: <a href="mailto:janeDoe@C.com" itemprop="email">janeDoe@C.com</a></p>
                         </div>
                     </aside>
                 </article>
             </section>                
 		</main>
-	</body>
+	</body>                                                              
 </html>

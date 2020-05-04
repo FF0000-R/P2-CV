@@ -28,14 +28,13 @@ img{
 }
 h1{
     font-size: 5vw;
-    line-height: 0.9;
 }
 .highlighttxt{
     color: #FFFF00;
 }
 .underName{
     font-size: 50%;
-    margin-top: 10vh;
+
 }
 .underline{
     text-decoration: underline;
@@ -173,20 +172,26 @@ p{
         width: 20%;
     }
     img{
-        width: 8vw;
-        height: 8vw;
-        margin: 0;
+        width: 9vw;
+        height: 9vw;
+        margin-right: 0;
         margin-left: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        
     }
     h1{
         width: 60%;
         margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .underline{
         text-decoration-color: #212121;
     }
     .highlighttxt{
-        color: #212121;
+        background-color: #212121;
     }
     main{
         flex-direction: column;
@@ -216,7 +221,8 @@ p{
         margin-right: auto;
         margin-left: auto;
         justify-content: space-between;
-        width: 30%;
+        padding-right: 30vw;
+        padding-left: 30vw;
     }
     .cv{
         width: 80vw;
@@ -231,5 +237,39 @@ p{
     }
     .rec{
         padding-bottom: 0;
+    }
+}
+@media all and (max-width: 450px){
+    header{
+        height: 55vw;
+    }
+    h1{
+        font-size: 2.5em;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .underName{
+        font-size: 0.6em;
+    }
+    img{
+        width: 8vh;
+        height: 8vh;
+        margin-right: 0;
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .hobbyico{
+        padding: 8vw;
+        border-width: 5px;
+    }
+    .element{
+        flex-direction: column;
+    }
+    .details{
+        text-align: justify;
     }
 }
