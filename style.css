@@ -99,10 +99,16 @@ a{
 }
 .fa-hamburger,
 .fa-drumstick-bite,
-.fa-hotdog{
+.fa-hotdog,{
     padding: 1vw;
     border: solid #212121 7px;
     border-radius: 50%;
+}
+.fa-laptop-code,
+.fa-wrench,
+.fa-pencil-alt{
+    padding: 1vw;
+    border: solid #212121 7px;
 }
 .cv, h1{
     margin-left: auto;
